@@ -1,0 +1,36 @@
+{
+  "name": "account-abstraction-starter",
+  "private": true,
+  "packageManager": "pnpm@7.13.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConcaveFi/account-abstraction-starter.git"
+  },
+  "author": "ConcaveFi <engineering@concave.lol> (https://github.com/ConcaveFi)",
+  "contributors": [],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ConcaveFi/account-abstraction-starter/issues"
+  },
+  "homepage": "https://account-abstraction-starter.vercel.app/",
+  "scripts": {
+    "build": "turbo build --filter web",
+    "dev": "turbo dev --filter web",
+    "clean:workspaces": "turbo clean",
+    "clean": "rm -rf node_modules",
+    "lint": "turbo lint && manypkg check",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "dependencies": {
+    "@manypkg/cli": "^0.20.0",
+    "@next/eslint-plugin-next": "^13.3.0",
+    "eslint-config-next": "^13.3.0",
+    "eslint-config-turbo": "^1.9.3",
+    "eslint-plugin-prettier": "^4.2.1",
+    "next": "^13.3.0",
+    "prettier": "^2.8.7",
+    "prettier-plugin-organize-imports": "^3.2.2",
+    "prettier-plugin-tailwindcss": "^0.2.7",
+    "turbo": "^1.9.3"
+  }
+}
